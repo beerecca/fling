@@ -1,0 +1,1020 @@
+/* Theme Name: Fling*/
+
+/*#3b3c3f = dark grey
+#9598a4 = medium grey (inactive icons)
+#d2d3d5 = light grey
+#f68026 = orange
+#955322 = dark orange
+#74c73c = green
+#396a1a = dark green*/
+
+@import url("http://fonts.googleapis.com/css?family=Lato:400,700,400italic");
+@import url("http://hello.myfonts.net/count/2a7d64");
+@import url("css/normalize.css");
+
+
+/*FONTS----------------------------------------------------------------------------------*/
+
+@font-face {
+	font-family: 'MuseoSlab-500';
+	src: url('fonts/2A7D64_0_0.eot');
+	src: url('fonts/2A7D64_0_0.eot?#iefix') format('embedded-opentype'),
+	url('fonts/2A7D64_0_0.woff') format('woff'),
+	url('fonts/2A7D64_0_0.ttf') format('truetype');}
+
+/*RESET----------------------------------------------------------------------------------*/
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+*, *:before, *:after {
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+ }
+
+img {
+	width: 100%;
+}
+
+/*LAYOUT---------------------------------------------------------------------------------*/
+
+/*HEADER & NAV*/
+
+body {
+	background-color: #d2d3d5;
+}
+
+.branding {
+	height: 40%;
+	background:	url('images/headerbg.png');
+	width: 100%;
+}
+
+.branding img {
+	width: 15%;
+	margin: 2% 0 0 15%;
+}
+
+nav {
+	background-color: #fff;
+	border-bottom: 3px solid #3b3c40;
+	width: 100%;
+}
+
+nav ul {
+	padding-left: 15%;
+	float: left;
+}
+
+nav li {
+	display: inline-block;	
+	padding-right: 20px;
+	margin-right: 10px;
+	
+}
+
+.logo-small {
+	width: 8%;
+	display: inline-block;
+	float: left;
+	margin: 1.2% 0 0 15%;
+}
+
+img.logo-small {
+	display: none;
+}
+
+input[type="search"] {
+	border: 4px solid #3a3b3f;
+	padding: 5px;
+	height: 22px;
+	margin-top: 1.2%;
+}
+
+header input[type="search"] {
+	float: right;
+}
+
+.search-form label {
+	float: none;
+}
+
+.stuck {
+	position: fixed;
+}
+
+.cart {
+	float: right;
+	padding: 5px 10px;
+	width: 80px;
+	margin: 1.2% 15% 0 20px;
+	background-color: #fff;
+	border: 4px solid #3a3b3f;
+}
+
+.cart img {
+	width: 26px;
+}
+
+.cart {
+	font-size: 0px;
+}
+
+.cart p {
+	margin: 10px 0 0 0;
+	float: right;
+	font-size: 16px;
+}
+
+header input[type="submit"] {
+	display: none;
+}
+
+/*FOOTER*/
+
+footer {
+	margin-top: 40px;
+	background-color: #3a3b3f;
+	height: 260px;
+}
+
+.testimonials {
+	position: relative;
+	width: 70%;
+	text-align: center;
+	margin: 30px auto 1em auto;
+	line-height: 1.5em;
+}
+
+blockquote {
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	width: 70%;
+}
+
+blockquote img {
+	width: 57px;
+	vertical-align:text-top;
+	margin-right: 20px;
+	float: left;
+}
+
+.menu-footer-nav-container {
+	margin-left: 15%;
+	margin-top: 220px;
+}
+
+.menu-footer-nav-container li {
+	display: inline;
+	padding-right: 1%;
+	margin-right: 1%;
+	border-right: 2px solid #fff;
+}
+
+#menu-footer-nav:last-child {
+	border-right: 0px;
+}
+
+.menu-footer-nav-container ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.icon.fb {
+	float: right;
+	margin: 175px 15% 0 0;
+}
+
+
+/*HOME PAGE CONTENT*/
+
+.content {
+	width: 70%;
+	max-width: 1170px;
+	margin: 0 auto;
+	background-color: #d2d3d5;
+}
+
+.promo {
+	margin-top: 20px;
+	padding: 10px;
+	background-color: #3a3b3f;
+}
+
+.promo-img img {
+	width: 60%;
+	float: left;
+	overflow: hidden;
+	object-fit: cover;
+	object-position: center center;
+}
+
+.promo-text {
+	width: 38%;
+	margin-left: 2%;
+	float: left;
+}
+
+.promo-text h2 {
+	margin-top: 0;
+	text-align: right;
+}
+
+.product {
+	float: left;
+	margin-right: 2%;
+	width: 23.5%;
+	display: block;
+	padding: 10px;
+	margin-bottom: 20px;
+	background-color: #3a3b3f;
+	min-height: 376px;
+}
+
+.product img {
+	margin-bottom: 10px;
+}
+
+.home .product:nth-of-type(4n) {
+	margin-right: 0;
+} 
+
+.product button {
+	float: right;
+	margin-left: 15px;
+}
+
+
+/*CATEGORY PAGE CONTENT*/
+
+.side-nav {
+	width: 23.5%;
+	float: left;
+	margin-right: 2%;
+	padding: 20px;
+	background-color: #3a3b3f;
+}
+
+.sub-content {
+	width: 74.5%;
+	margin: 0;
+	float: left;
+}
+
+.sub-content .product {
+	width: 31.5%;  /* Calculation is side-nav / .sub-content (23.5 / 74.5 = 0.315 = 31.54%) */
+	margin-right: 2.75%;
+}
+
+.sub-content .product:nth-of-type(3n) {
+	margin-right: 0;
+}
+
+/*PRODUCT PAGE CONTENT*/
+
+.detail-title {
+	display: inline-block;
+	float: left;
+}
+
+.detail-price {
+	display: inline-block;
+	float: right; 
+}
+
+.detail-panel {
+	background-color: #fff;
+	padding: 2%;
+	clear: both;
+}
+
+.detail-image {
+	width: 48%;
+	float: left;
+	margin-right: 2%;
+	position: relative;
+}
+
+img.secret  {
+	position: absolute;
+	top: 0px;
+}
+
+.detail-text {
+	width: 50%;
+	float: left;
+}
+
+.detail-action h4 {
+	float: left;
+	margin: 4% 6% 0 0;
+}
+ 
+.detail-action button {
+	display: inline-block; 
+}
+
+input[name="quantity"] {
+	margin-right: 6%;
+	width: 38px;
+	height: 38px;
+	text-align: center;
+	border: 2px solid #9598a4;
+}
+
+
+/*CART PAGE CONTENT*/
+
+
+.headerRow .item-name {
+	color: #d2d3d5;
+}
+
+.headerRow {
+	color: #f68026;
+	margin-bottom: 2%;
+}
+
+.headerRow .item-quantity {
+	position: relative;
+	left: -15px;
+}
+
+.headerRow .item-thumb {
+	height: 0px;
+}
+.itemRow {
+	margin-bottom: 5%;
+	clear: both;
+}
+
+.itemRow img,
+.item-thumb,
+.item-name,
+.item-price,
+.item-decrement,
+.item-quantity,
+.item-increment,
+.item-total {
+	width: 16%;
+	display: inline-block;
+	margin-right: 2%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.item-thumb {
+	height: 142px;
+}
+
+.itemRow img {
+	margin-bottom: 5%;
+	width: 142px;
+}
+
+.itemRow:last-child img{
+	margin-bottom: 0;
+}
+
+.item-name {
+	font-family: 'MuseoSlab-500', serif;
+	font-size: 1.2em;
+	width: 26%;
+	text-align: left;
+}
+
+.item-decrement {
+ 	margin-right: 0;
+ 	width: 3%;
+}
+
+.item-quantity {
+	width: 4%;
+	text-align: center;
+	margin-right: 0;
+}
+
+.item-increment {
+	width: 3%;
+}
+
+.item-remove {
+	display: inline-block;
+	margin-right: 0;
+	padding-top: 6px;
+}
+
+.item-remove button {
+	margin-left: 15px;
+}
+
+
+.item-remove button,
+.item-decrement button,
+.item-increment button {
+	font-family: sans-serif;
+	line-height: 1em;
+	text-decoration: none;
+	padding: 0px;
+	width: 23px;
+	height: 23px;
+}
+
+
+.cart-details button {
+	display: inline-block;
+	margin-bottom: 40px;
+}
+
+.cart-details {
+	text-align: right;
+}
+
+.cart-delivery p {
+	display: inline-block;
+	margin-right: 1%;
+}
+
+.overlay {
+	z-index: 1000;
+	background-color: rgba(0, 0, 0, 0.75);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	display: none;
+}
+
+.terms-text {
+	z-index: 2000;
+	background-color: #fff;
+	position: fixed;
+	right: 50%;
+	margin-right:-25%;
+	margin-top: 10%;
+	width:50%;
+	padding: 0 2% 2% 2%;
+	display: none;
+}
+
+.exit {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-size: 1.5em;
+	color: #f68026;
+	padding: 2px 6px;
+/*	border: 2px solid #f68026;*/
+	font-weight: bold;
+	cursor: pointer;
+}
+
+/*DELIVERY PAGE CONTENT*/
+
+form {
+	line-height: 2.5em;
+}
+
+form input,
+form textarea {
+	margin-left: 1%;
+	padding-left: 4px;
+}
+
+#autocomplete {
+	width: 360px;
+}
+
+form label {
+	float: left;
+	text-align: right;
+	width: 120px;
+}
+
+/*CONTACT PAGE CONTENT*/
+
+.contact-info p {
+	line-height: 0.5em;
+}
+
+.contact-info {
+	float: right;
+	background-color: #fff;
+	padding: 4%;
+}
+
+.wpcf7 {
+	width: 50%;
+	float: left;
+}
+
+.wpcf7 p {
+	vertical-align: top;
+	text-align: left;
+	line-height: 1.5em;
+}
+
+.wpcf7 input,
+.wpcf7 textarea {
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+input[name="your-name"],
+input[name="your-email"],
+input[name="your-subject"] {
+	width: 200px;
+}
+
+
+.contact textarea {
+	line-height: 1em;
+	margin-top: 8px;
+}
+
+/*STANDARD PAGE CONTENT*/
+
+.panel {
+	background-color: #fff;
+	padding: 2% 2%;
+	margin-bottom: 2%;
+}
+
+/*TYPOGRAPHY----------------------------------------------------------------------------------*/
+
+/*GENERAL*/
+
+body, h1, h2, h3, h4, a {
+	font-size: 100%;
+	color: #3b3c3f;
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+h1 {
+	font-family: 'MuseoSlab-500', serif;
+	font-size: 1.8rem;
+}
+
+h2 {
+	font-family: 'MuseoSlab-500', serif;
+	font-size: 1.6rem;
+	border-bottom: 2px solid #f68026;
+	display: table;
+}
+
+h3 {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.4rem;
+	text-transform: lowercase;
+	border-bottom: 2px solid #f68026;
+	display: table;
+}
+
+h4 {
+	font-family: 'MuseoSlab-500', serif;
+	font-size: 1.2rem;
+	margin: 0;
+}
+
+a {
+	color: #74c73c;
+}
+
+button a {
+	color: #fff;
+	text-decoration: none;
+	font-family: 'MuseoSlab-500', serif;
+}
+
+a:hover {
+	color: #396a1a;
+}
+
+hr {
+	display: block; 
+	height: 2px;
+    border: 0; 
+    border-top: 2px solid #f68026;
+    margin: -1em 0 0 0;
+}
+
+/*SPECIFIC*/
+
+.branding a {
+	line-height: 0px;
+	font-size: 0px;
+}
+
+.branding h1 {
+	font-size: 1.4rem;
+	color: #fff;
+	padding: 0 0 2% 15%;
+	text-shadow: 2px 2px 4px #000;
+	line-height: 0;
+}
+
+nav li a {
+	font-family: 'MuseoSlab-500';
+	font-size: 1.8rem;
+	text-transform: lowercase;
+	text-decoration: none;
+	color: #3b3c3f;
+}
+
+nav li a:hover {
+	color: #f68026;
+	text-decoration: underline;
+}
+
+nav li a {
+    -webkit-transition: color 0.2s ease;
+       -moz-transition: color 0.2s ease;
+         -o-transition: color 0.2s ease;
+        -ms-transition: color 0.2s ease;
+            transition: color 0.2s ease;
+}
+
+nav li {
+	border-right: 2px solid #f68026;
+}
+
+nav li:last-child {
+	border: none;
+}
+
+.promo, 
+.promo h2,
+.product, 
+.product h4, 
+.product h4 a,
+footer, 
+footer h4,  
+.side-nav, 
+.side-nav h3 {
+	color: #fff;
+}
+
+.product h4, 
+.product h4 a {
+	text-decoration: none;
+	font-family: 'MuseoSlab-500', serif;
+	font-size: 1.2rem;
+}
+
+.price {
+	color: #fff;
+	margin: 0;
+}
+
+.price-old {
+	color: #74c73c;
+	position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.price-old::before {
+    content: '';
+    border-bottom: 1px solid #74c73c;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.side-nav {
+	line-height: 0.8em;
+}
+
+.side-nav ul {
+	list-style-type: none;
+	padding-left: 0px;
+
+}
+
+.side-nav .children {
+	padding-left: 30px;
+}
+
+.side-nav ul a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.side-nav ul a:hover {
+	text-decoration: underline;
+}
+
+.side-nav ul .current-cat a {
+	color: #f68026;
+}
+
+.side-nav ul .current-cat .children a {
+	color: #fff;
+}
+
+.side-nav ul .children a:before {
+	content:"> ";
+}
+
+
+
+/*BUTTONS----------------------------------------------------------------------------------*/
+
+
+button,
+input[type="submit"] {
+	display: block;
+	font-family: 'MuseoSlab-500', serif;
+	font-size: 1.2em;
+    line-height: 1.5em;
+	padding: 5px 10px;
+    margin: 10px 0;
+    color: #fff;
+    background-color: #74c73c;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 3px 3px 0 #396a1a;
+    cursor: pointer;
+}
+button:disabled {
+	background-color: #9598a4;
+	box-shadow: 3px 3px 0 #3b3c3f;
+	color: #CECECE;
+}
+
+button.icon {
+	width: 34px;
+	height: 34px;
+	box-shadow: 3px 3px 0 #656668;
+}
+
+button.icon:focus {
+	outline: none;
+}
+
+button.icon.fav {
+	background: #d2d3d5 url("images/star.png") no-repeat;
+}
+
+button.icon.fav.active {
+	background: #d2d3d5 url("images/star_active.png") no-repeat;
+}
+
+button.icon.fb {
+	background: #d2d3d5 url("images/fb.png") no-repeat;
+}
+
+button.icon.fb:hover {
+	background: #d2d3d5 url("images/fb_active.png") no-repeat;
+}
+
+
+/*MEDIA QUERIES---------------------------------------------------------------------------*/
+
+
+
+@media all and (max-width: 1250px) { 
+
+	.home .product {
+		width: 32%;
+	}
+
+	.home .product:nth-of-type(3n) {
+		margin-right: 0;
+	} 
+
+/*	.sub-content .product, .sub-content .product:nth-of-type(3n) {
+		width: 49%;
+		margin-right: 2%;
+	}
+
+	.sub-content .product:nth-of-type(2n) {
+		margin-right: 0;
+	} rh need to do the maths to get the right product width for the aside to also be that width*/
+
+	footer {
+		height: 290px;
+	}
+
+	.menu-footer-nav-container {
+		margin-top: 240px;
+	}
+
+	.icon.fb {
+		margin-top: 195px;
+	}
+}
+
+@media all and (max-width: 1050px) { 
+	
+	nav li a {
+		font-size: 1.4rem;
+	}
+
+	nav li {
+		padding-right: 10px;
+		margin-right: 5px;
+	}
+
+	.branding h1 {
+		display: none;
+	}
+
+	.branding img {
+		min-width: 130px;
+	}
+
+	footer {
+		height: 330px;
+	}
+
+	.menu-footer-nav-container {
+		margin-top: 290px;
+	}
+
+	.icon.fb {
+		margin-top: 245px;
+	}
+}
+
+@media all and (max-width: 850px) { 
+	
+	nav ul {
+		float: none;
+	}
+
+	header input[type="search"], .cart {
+		float: left;
+	}
+
+	.cart {
+		margin: 0 20px 15px 15%;
+	}
+
+	header input[type="search"] {
+		margin: 0;
+	}
+
+	.promo-img img {
+		width: 100%;
+	}
+
+	.promo-text {
+		width: 100%;
+		padding: 10px;
+	}
+
+	.home .product {
+		width: 49%;
+	}
+
+	.home .product:nth-of-type(3n) {
+		margin-right: 2%;
+	}
+
+	.home .product:nth-of-type(2n) {
+		margin-right: 0;
+	} 
+
+	footer {
+		height: 410px;
+	}
+
+	.menu-footer-nav-container {
+		margin-top: 370px;
+		margin-left: 2%;
+	}
+
+	.icon.fb {
+		margin-top: 325px;
+		margin-right: 2%;
+	}
+
+	.wpcf7, .contact-info {
+		float: none;
+		width: 100%;
+	}
+
+	.wpcf7 textarea {
+		width: 100%;
+	}
+
+}
+
+@media all and (max-width: 610px) {
+
+	.branding img, .cart, .menu-footer-nav-container {
+		margin-left: 2%;
+	}
+	
+	nav ul {
+		padding-left: 2%;
+	}
+
+	.content, .testimonials {
+		width: 96%;
+	}
+	
+	blockquote {
+		width: 100%;
+	}
+
+	footer {
+		height: 440px;
+	}
+
+	.home .product {
+		width: 100%;
+	}
+
+	.home .product {
+		margin-right: 0%;
+	}
+
+	.terms-text {
+		left: 2%;
+		margin-right: 0;
+		width: 96%;
+	}
+}
+
+/*rh need to just make the promo img a background image cover*/
+
+
+/* @media all and (max-width: 1455px) { 
+
+.promo img {
+	width: 40%;
+}
+
+.promo-text {
+	width: 58%;
+}
+
+} ASK MATT BEST OPTION FOR PROMO IMAGE SHRINKING crap jquery version of background image cover
+
+
+@media all and (max-width: 1297px) { your content here }
+
+
+
+
+
+
+@media all and (max-width: 1150px) { 
+
+.promo-text {
+	float: none;
+	width: 100%;
+}
+
+.promo img {
+	float: none;
+	width: 100%;
+	margin-bottom: 2%;
+
+}
+
+.product {
+	width: 49%;
+}
+
+.content .product:nth-child(2n) {
+	margin-right: 0;
+}
+
+}
+
+
+@media all and (max-width: 1060px) {
+
+nav {
+	display: none;
+}
+
+.branding h1 {
+	font-size: 1.2em;
+	line-height: 1.5em;
+	margin-right: 15%;
+}
+
+}
+ */
